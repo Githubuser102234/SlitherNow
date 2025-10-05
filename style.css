@@ -1,0 +1,41 @@
+/* Simple responsive styling for the Slither clone */
+:root{
+  --bg:#0b1220;
+  --panel:#0f1724cc;
+  --accent:#7fe1a8;
+  --muted:#9aa7bf;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background: radial-gradient(ellipse at center, #0f1729 0%, #07101a 100%);
+  color:#dfe9f3;
+  font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:18px;
+  gap:12px;
+  min-height:100vh;
+}
+#ui{
+  position:absolute;
+  left:18px;
+  top:18px;
+  background:var(--panel);
+  padding:12px 14px;
+  border-radius:10px;
+  backdrop-filter: blur(6px);
+  box-shadow:0 6px 20px rgba(2,6,23,0.6);
+  max-width:320px;
+}
+#ui h1{font-size:18px;margin-bottom:8px}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.controls button{padding:6px 10px;border-radius:6px;border:none;background:#172433;color:#dfe9f3;cursor:pointer}
+.controls input[type=range]{vertical-align:middle}
+.hint{margin-top:8px;color:var(--muted);font-size:13px}
+canvas{width:100vw;height:100vh;border-radius:6px;display:block}
+@media (max-width:600px){
+  #ui{left:10px;top:10px;padding:10px}
+  #ui h1{font-size:16px}
+}

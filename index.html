@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slither Clone (Single-player)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="ui">
+    <h1>Slither Clone</h1>
+    <div class="controls">
+      <button id="restartBtn">Restart</button>
+      <label>Speed: <input id="speedRange" type="range" min="1" max="8" value="4"></label>
+      <span id="score">Score: 0</span>
+    </div>
+    <p class="hint">Move your mouse to steer. Eat pellets to grow. Avoid running into yourself.</p>
+  </div>
+  <canvas id="game"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
